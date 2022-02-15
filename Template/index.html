@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Thyroid Disease Prediction</title>
+        <link rel="stylesheet" href="../static/styles/style.css">
+    </head>
+    <body>
+        <center>
+
+        <h1 style="font-size:40px; color:rgb(151, 35, 151);">Cab Fare Prediction</h1>
+        <h4 style="font-size:20px;margin-left: 20px;">This web application is made to predict Thyroid disease with the following parameters given</h4>
+        <p style="font-size:20px;">Fill the form and get your results</p>
+
+
+        <form method='POST', action="{{url_for('prediction')}}">
+
+            <label style="font-size:large;background-color:rgb(248, 89, 248); padding:3px 8px; margin: 10px 3px 17px 3px;">Passenger</label>
+            <input type="number", style="padding:5px 17px; font-size:13px;" name='Passenger', placeholder="enter the value"><br><br>
+
+            <label style="font-size:large;background-color:rgb(248, 89, 248); padding:3px 10px; margin: 10px 4px 17px 4px;">Distance:</label>
+            <input type="number", style="padding:5px 17px; font-size:13px;" name='Distance', placeholder="enter the value"><br><br>
+
+            <label style="font-size:large;background-color:rgb(248, 89, 248); padding:3px 8px; margin: 10px 4px 17px 4px;">Year</label>
+            <input type="number", style="padding:5px 17px; font-size:13px;" name='Year', placeholder="enter the value"><br><br>
+
+            <label style="font-size:large;background-color:rgb(248, 89, 248); padding:3px 8px; margin: 10px 12px 17px 4px;">Month</label>
+            <input type="number", style="padding:5px 17px; font-size:13px;" name='Month', placeholder="enter the value"><br><br>
+
+            <label style="font-size:large;background-color:rgb(248, 89, 248); padding:3px 8px; margin: 10px 12px 17px 4px;">Hour</label>
+            <input type="number", style="padding:5px 17px; font-size:13px;" name='Hour', placeholder="enter the value"><br><br>
+
+
+            <input type="submit" , style="background-color:rgb(248, 89, 248);padding:5px 12px; font-size: 15px;" value='Predict'> <br><br>
+            <input type="reset", style="background-color:rgb(248, 89, 248);padding:5px 12px; font-size: 15px;" value='Reset value'> <br><br>
+
+        </form>
+
+        </center>
+    </body>
+</html>
+
+
+
+
+
+
